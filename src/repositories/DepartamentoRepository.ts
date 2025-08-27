@@ -6,7 +6,6 @@ const prisma = new PrismaClient();
 
 export class DepartamentoRepository {
     protected readonly model = prisma.departamentos;
-    protected readonly includes?: any;
 
     private readonly creator: BaseCreator<DepartamentoAtributos>;
     private readonly finder: BaseFinder<DepartamentoAtributos>;

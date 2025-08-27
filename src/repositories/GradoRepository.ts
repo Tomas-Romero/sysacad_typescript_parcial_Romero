@@ -6,7 +6,6 @@ const prisma = new PrismaClient();
 
 export class GradoRepository {
     protected readonly model = prisma.grados;
-    protected readonly includes?: any;
 
     private readonly creator: BaseCreator<GradoAtributos>
     private readonly finder: BaseFinder<GradoAtributos>

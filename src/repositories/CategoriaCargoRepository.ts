@@ -5,7 +5,6 @@ import { BaseCreator, BaseFinder, BaseUpdater, BaseDeleter } from "./BaseReposit
 const prisma = new PrismaClient()
 export class CategoriaCargoRepository {
     protected readonly model = prisma.categoriasCargo;
-    protected readonly includes?: any;
 
     private readonly creator: BaseCreator<CategoriaCargoAtributos>
     private readonly finder: BaseFinder<CategoriaCargoAtributos>

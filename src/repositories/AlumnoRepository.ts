@@ -5,8 +5,7 @@ import { AlumnoAtributos } from "../types";
 const prisma = new PrismaClient();
 
 export class AlumnoRepository {
-    protected readonly model = prisma.alumnos
-    protected readonly includes?: any;
+    protected readonly model = prisma.alumnos;
 
     private readonly creator: BaseCreator<AlumnoAtributos>
     private readonly finder: BaseFinder<AlumnoAtributos>

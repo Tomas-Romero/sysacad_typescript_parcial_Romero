@@ -6,7 +6,6 @@ const prisma = new PrismaClient();
 
 export class AreaRepository {
     protected readonly model = prisma.areas;
-    protected readonly includes?: any;
 
     private readonly creator: BaseCreator<AreaAtributos>
     private readonly finder: BaseFinder<AreaAtributos>
